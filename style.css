@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/*------------------------------------------- This is for Order Page---------------------------------------------*/
+
+/*-------------------------------------------full page div and common things--------------------------------------*/
+.text-center{
+    text-align: center;
+}
+
+.Order_Main_content_wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:80px;
+}
+
+.Order_Main_container{
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgb(255, 89, 186),
+        rgb(255, 89, 186),
+        rgb(252, 148, 164),
+        rgb(255, 129, 148),
+        rgb(230, 183, 97),
+        rgb(255, 203, 106),
+        rgb(252, 252, 65)
+    );
+}
+
+.nav_menu{
+    display: none;
+}
+/*-------------------------------------------header(heading)---------------------------------------------*/
+.Heading_wrapper_h1{
+    color:white;
+    letter-spacing: 2px;
+}
+
+/*-------------------------------------------body(foods)-------------------------------------------------*/
+.Food_img > img{
+    border-top-right-radius: 50px;
+}
+
+.Food1,.Food2,.Food3{
+    border:1px solid white;
+    border-radius: 0px 50px; 
+    padding: 20px;
+    min-width: 205px;
+    width: 15%;
+    background-color: white;
+}
+
+.Food_content_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.Food1 > div, .Food2 > div, .Food3 > div{
+    margin-bottom: 10px;
+}
+
+.Food1 > div:last-child, .Food2 > div:last-child, .Food3 > div:last-child{
+    margin-bottom: 0px;
+}
+
+.Food_content_wrapper > div > div > p{
+    font-size: 13px;
+    color: gray;
+}
+
+/*--------------------------------------------footer(order btn)------------------------------------------*/
+.Order_btn{
+    text-decoration: none;
+    color: black;
+}
+
+.btn_design{
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    border:0px solid white;
+    background-color: rgba(255, 254, 254, 0.356);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------- This is for Home Page---------------------------------------------*/
+/*-------------------------------------------full page div and common things--------------------------------------*/
+
+.Home_Main_container{
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgb(255, 89, 186),
+        rgb(255, 89, 186),
+        rgb(252, 148, 164),
+        rgb(255, 129, 148),
+        rgb(230, 183, 97),
+        rgb(255, 203, 106),
+        rgb(252, 252, 65)
+    );
+}
+
+/*-------------------------------------------Header(Navbar)--------------------------------------*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.navbar_nav{
+    width: 96%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.nav_pages{
+    width:90%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link{
+    text-decoration: none;
+    color:black;
+}
+
+.nav_ul > li{
+    list-style: none;
+}
+
+.nav_ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_info{
+    width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-phone{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.nav-cart{
+    font-size:20px;
+}
+
+.nav_info > a{
+    color: black;
+}
+
+/*-------------------------------------------Body(Image)--------------------------------------*/
+
+
+.Imagetext_wrapper{
+    position: relative;
+}
+
+.Image_Wrapper{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+    min-width: 320px;
+}
+
+.Image_text_wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    min-height: 480px;
+    min-width: 320px;
+}
+
+.Blur_text_box{
+    border-radius: 5px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(250, 98, 144, 0.700);
+    width: 35%;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.Blur_text_content{
+    width: 85%;
+}
+
+.Image_text_h1{
+    color: white;
+    font-size: 30px;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+.Image_text_p{
+    color:rgb(255 240 210);
+    font-size: 16px;
+   
+}
+
+/*-------------------------------------------Changes for Mobile view--------------------------------------*/
+
+@media screen and (max-width:767px) {
+    
+    .nav_ul{
+        flex-wrap:wrap;
+        align-items: center;
+    }
+    
+    .Image_text_wrapper{
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
