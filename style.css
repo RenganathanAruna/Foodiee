@@ -236,13 +236,6 @@
    
 }
 
-.Message_wrapper{
-    margin-top:20px;
-    text-align:center;
-}
-
-.Message_wrapper > p{
-    font-weight:bolder;
 /*-------------------------------------------Changes for Mobile view--------------------------------------*/
 
 @media screen and (max-width:767px) {
