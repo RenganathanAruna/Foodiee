@@ -1,5 +1,5 @@
 # Foodiee
-This is developed using HTML and Css
+This is developed using HTML and CSS
 
 This app is deployed in netlify 
 
